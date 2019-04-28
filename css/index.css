@@ -15,6 +15,7 @@ body{
     background-repeat: round;
     color: #444444;
     padding: 5px;
+    overflow-x: hidden;
 }
 .header > a {
     text-align: center;
@@ -58,12 +59,12 @@ body{
     font-size: 20px;
     padding: 5px;
     position: absolute;
-    height: 100%-110px-70px;
     top: 92px;
     bottom: 70px;
     width: 100%;
     box-sizing: border-box;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .main > a {
@@ -80,12 +81,11 @@ body{
     color: #444444;
     text-align: center;
     font-size: 20px;
-    padding: 10px;
     position: absolute;
-    height: 70px;
     bottom: 0px;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 /*footer的按鈕*/
 .button {
@@ -129,6 +129,12 @@ body{
 }
 /*按扭結束*/
 
+.row::after { /* ::after 偽元素*/
+    content: "";     /*欲插入的""內容接續在.row後面*/
+    clear: both;   /*左右兩側均不允許浮動元素。*/
+    display: block;  /* 會換行 (.row以後的東西換到下面去)*/
+}
+
 * {
     box-sizing: border-box;  /*box-sizing在設定padding的時候看他會不會更大，最大不會超出所設定的數值*/
     font-family: Microsoft JhengHei;
@@ -166,4 +172,24 @@ body{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+
+.m1 {
+    padding: 0;
+}
+
+.m2 {
+    padding: 0;
+}
+
+.m3 {
+    padding: 0;
+}
+
+.m4 {
+    padding: 0;
+}
+
+.m5 {
+    padding: 0;
 }
