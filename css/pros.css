@@ -245,6 +245,8 @@ div{
     padding: 0;
 }
 
-.pho{
+.pho > img {
   width: 80%;
+  display:block;
+  margin:auto;
 }
