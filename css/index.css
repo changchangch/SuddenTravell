@@ -106,7 +106,7 @@ div{
 
 /*輪播圖片*/
 
-#lunbo ul li{list-style: none; height:100%;}
+#lunbo ul li{list-style: none; width: 100%;}
 #lunbo ul li:not(:first-child){display: none;}
 
 .main > a {
@@ -115,6 +115,7 @@ div{
   top: 0;
   left: 20%;
   right: 20%;
+  width: 80%;
   opacity: 0;
   filter: alpha(opacity=0);
   /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
@@ -124,6 +125,8 @@ div{
 
 .main > a > img {
   max-width: 100%;
+  width: 80%;
+  position: absolute;
 }
 
 /*動畫關鍵影格*/
