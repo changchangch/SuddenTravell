@@ -65,7 +65,7 @@ div{
     padding: 10px;
     position: absolute;
     top: 78px;
-    bottom: 112px;
+    bottom: 122px;
     width: 100%;
     box-sizing: border-box;
     overflow-y: auto;
@@ -88,6 +88,7 @@ div{
     font-size: 20px;
     padding: 5px;
     position: absolute;
+    padding: 5px;
     bottom: 0px;
     width: 100%;
     box-sizing: border-box;
