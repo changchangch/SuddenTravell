@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+}
+body{
+    margin:0px;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%; /* For mobile: 0px ~ 500px */
+}
+.header {
+    background-image: url(../background.jpg);
+    background-repeat: round;
+    color: #444444;
+    padding: 5px;
+}
+.header > a {
+    text-align: center;
+    color: #444444;
+    text-decoration: none;
+}
+.header > a:hover {
+    text-align: center;
+    color: #444444;
+    text-decoration: none;
+}
+/*
+.menu ul {
+    list-style-type: none;   /*把項目符號去掉
+    margin: 0px;
+    padding: 0px;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {  /*hover就是滑鼠浮上去的時候就會變色
+    background-color: #0099cc;
+}
+*/
+.main::after { /* ::after 偽元素*/
+    content: "";     /*欲插入的""內容接續在.row後面*/
+    clear: both;   /*左右兩側均不允許浮動元素。*/
+    display: block;  /* 會換行 (.row以後的東西換到下面去)*/
+}
+
+.main {
+    background-image: url(../background.jpg);
+    background-repeat: round;
+    background-size: cover;
+    color: #444444;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    position: absolute;
+    height: 100%-110px-70px;
+    top: 92px;
+    bottom: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.main > a {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+}
+
+.footer {
+    background-image: url(../background.jpg);
+    background-repeat: round;
+    color: #444444;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    height: 70px;
+    bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*footer的按鈕*/
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #E38EFF;
+  border: none;
+  color: #444444;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*按扭結束*/
+
+* {
+    box-sizing: border-box;  /*box-sizing在設定padding的時候看他會不會更大，最大不會超出所設定的數值*/
+    font-family: Microsoft JhengHei;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%; /* For mobile: 0px ~ 600px */
+}
+@media only screen and (min-width: 600px) {  /*平板600~768*/
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {    /*桌機768up*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
