@@ -243,3 +243,8 @@ div{
 .m5 {
     padding: 0;
 }
+
+.pho > img {
+  width: 80%;
+  height: 80%;
+}
