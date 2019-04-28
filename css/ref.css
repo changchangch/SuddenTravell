@@ -65,7 +65,7 @@ div{
     padding: 5px;
     position: absolute;
     top: 78px;
-    bottom: 70px;
+    bottom: 112px;
     width: 100%;
     box-sizing: border-box;
     overflow-y: auto;
@@ -87,6 +87,7 @@ div{
     text-align: center;
     font-size: 20px;
     position: absolute;
+    padding: 5px;
     bottom: 0px;
     width: 100%;
     box-sizing: border-box;
@@ -242,4 +243,14 @@ div{
 
 .m5 {
     padding: 0;
+}
+
+.sr1 .sr2 .sr3 > p {
+  text-align: center;
+  font-size: 11px;
+}
+
+.sr1 .sr2 .sr3 > a {
+  text-align: center;
+  font-size: 11px;
 }
