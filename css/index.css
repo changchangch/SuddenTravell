@@ -68,16 +68,8 @@ div{
     bottom: 118px;
     width: 100%;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
-}
-
-.main > a {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    position: absolute;
 }
 
 ::-webkit-scrollbar {
@@ -106,27 +98,20 @@ div{
 
 /*輪播圖片*/
 
-#lunbo ul li{list-style: none; width: 100%;}
+#lunbo ul li{list-style: none; width: 95%;}
 #lunbo ul li:not(:first-child){display: none;}
 
-.main > a {
+.main > ul > li > a > img {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 20%;
-  right: 20%;
+  margin: 0 auto;
   width: 80%;
+  position: absolute;
+  vertical-align: center;
   opacity: 0;
   filter: alpha(opacity=0);
   /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
   -webkit-animation: silder 18s linear infinite;
   animation: silder 18s linear infinite;
-}
-
-.main > a > img {
-  max-width: 100%;
-  width: 80%;
-  position: absolute;
 }
 
 /*動畫關鍵影格*/
