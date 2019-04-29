@@ -280,16 +280,16 @@ div{
 }
 
 .int > a {
-  text-decoration:underline;
+  text-decoration: underline;
   color: blue;
 }
 
 .int > a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
   color: blue;
 }
 
 .int > p > a {
-  text-decoration:underline;
+  text-decoration: underline;
   color: blue;
 }
