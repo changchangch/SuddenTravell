@@ -62,7 +62,6 @@ div{
     color: #444444;
     text-align: center;
     font-size: 20px;
-    padding: 5px;
     position: absolute;
     top: 78px;
     bottom: 118px;
@@ -98,14 +97,16 @@ div{
 
 /*輪播圖片*/
 
-#lunbo ul li{list-style: none; height: 100%; display: block; margin: auto;}
+#lunbo ul li{list-style: none; height: 100%;}
 #lunbo ul li:not(:first-child){display: none;}
 
 .main > ul > li > a > img {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   max-width: 100%;
+  padding: 5px;
+  right: 5%;
   opacity: 0;
   filter: alpha(opacity=0);
   /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
