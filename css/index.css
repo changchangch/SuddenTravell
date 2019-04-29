@@ -98,7 +98,7 @@ div{
 
 /*輪播圖片*/
 
-#lunbo ul li{list-style: none; width: 100%; display: block; margin: auto;}
+#lunbo ul li{list-style: none; height: 100%; display: block; margin: auto;}
 #lunbo ul li:not(:first-child){display: none;}
 
 .main > ul > li > a > img {
