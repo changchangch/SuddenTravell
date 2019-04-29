@@ -67,7 +67,7 @@ div{
     bottom: 118px;
     width: 100%;
     box-sizing: border-box;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
