@@ -274,3 +274,18 @@ div{
   text-align: center;
   font-size: 18px;
 }
+
+.int > a {
+  text-decoration:underline;
+  color: #444444;
+}
+
+.int > a:hover {
+  text-decoration:underline;
+  color: #444444;
+}
+
+.int > p > a {
+  text-decoration:underline;
+  color: #444444;
+}
